@@ -4,6 +4,7 @@ class Nota {
         this.a1 = a1;
         this.a2 = a2;
         this.a3 = a3;
+		this.media = this.mediaFinal();
     }
 
     mediaFinal() {
@@ -15,8 +16,14 @@ class Nota {
     }
 
     mediaCA() {
-        return "SS";
+        if (this.media >= 9.0) { return "SS" }
+        else if (this.media >= 7.0) { return "MS" }
+        else if (this.media >= 5.0) { return "MM" }
+        else if (this.media >= 3.0) { return "MI" }
+        else if (this.media >= 0.1) { return "II" }
+        else { return "SR" };
     }
+
 }
 
 module.exports = Nota;
