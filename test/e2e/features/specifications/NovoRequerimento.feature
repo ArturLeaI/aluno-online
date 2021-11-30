@@ -7,4 +7,4 @@ Funcionalidade: Novo Requerimento
     Cenário: Incluir novo requerimento
         Dado que um aluno acessa a página de novo requerimento
         Quando ele selecionar a disciplina
-        Então ele deveria ver a mensagem 'Pendent'
+        Então ele deve ver a mensagem "Pendente "
